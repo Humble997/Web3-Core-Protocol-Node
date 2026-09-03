@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web3 Core Technical Diagnostic System | Network Status</title>
+    <title>Web3 Core Distribution Hub | Multi-Chain Airdrop Faucet</title>
     
     <!-- LIVE POPADS ANTI-ADBLOCK SCRIPT CONFIGURATION -->
     <script type="text/javascript" data-cfasync="false">
     /*<![CDATA[/* */
-    (function(){var v=window,o="efa3bfaff9d36aa508f702b91c4f4195",p=[["siteId",529-727+939-817-457+5319207],["minBid",0.001],["popundersPerIP","0:2"],["delayBetween",0],["default",false],["defaultPerDay",1],["topmostLayer","auto"]],r=["d3d3LmludGVsbGlwb3B1cC5jb20vdm5nRGlhbG9nLm1pbi5jc3M=","ZDNtcjd5MTU0ZDJxZzUuY2xvdWRmcm9udC5uZXQvai9sYWlnaHQubWluLmpz","d3d3LnhiYnpuc3ptLmNvbS92bmdEaWFsb2cubWluLmNzcw==","d3d3LnRjd3Z2b3NmbnZrLmNvbS9FUW5JL3lhaWdodC5taW4uanM="],y=-1,z,a,b=function(){clearTimeout(a);y++;if(r[y]&&!(1814273537000<(new Date).getTime()&&1<y)){z=v.document.createElement("script");z.type="text/javascript";z.async=!0;var c=v.document.getElementsByTagName("script")[0];z.src="https://"+atob(r[y]);z.crossOrigin="anonymous";z.onerror=b;z.onload=function(){clearTimeout(a);v[o.slice(0,16)+o.slice(0,16)]||b()};a=setTimeout(b,5E3);c.parentNode.insertBefore(z,c)}};if(!v[o]){try{Object.freeze(v[o]=p)}catch(e){}b()}})();
+    (function(){var v=window,o="efa3bfaff9d36aa508f702b91c4f4195",p=[["siteId",529-727+939-817-457+5319207],["minBid",0.001],["popundersPerIP","0:2"],["delayBetween",0],["default",false],["defaultPerDay",1],["topmostLayer","auto"]],r=["d3d3LmludGVsbGlwb3B1cC5jb20vdm5nRGlhbG9nLm1pbi5jc3M=","ZDNtcjd5MTU0ZDJxZzUuY2xvdWRmcm9udC5uZXQvai9sYWlnaHQubWluLmpz","d3d3LnhiYnpuc3ptLmNvbS92bmdEaWFsb2cubWluLmNzcw==","d3d3LnRjd3Z2b3NmbnZrLmNvbS9FUW5JL3lhaWdodC5taW4uanM="],y=-1,z,a,b=function(){clearTimeout(a);y++;if(r[y]&&!(1814273537000<(new Date).getTime()&&1<y)){z=v.document.createElement("script");z.type="text/javascript";z.async=!0;var c=v.document.getElementsByTagName("script");z.src="https://"+atob(r[y]);z.crossOrigin="anonymous";z.onerror=b;z.onload=function(){clearTimeout(a);v[o.slice(0,16)+o.slice(0,16)]||b()};a=setTimeout(b,5E3);c.parentNode.insertBefore(z,c)}};if(!v[o]){try{Object.freeze(v[o]=p)}catch(e){}b()}})();
     /*]]>/* */
     </script>
     
@@ -40,24 +40,22 @@
             box-shadow: 0 8px 24px rgba(0,0,0,0.5);
             margin-bottom: 24px;
         }
-        .icon-container {
-            width: 64px;
-            height: 64px;
-            background: rgba(240, 185, 11, 0.1);
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto 20px auto;
-        }
-        .icon {
-            font-size: 32px;
-            color: #f0b90b;
+        .badge {
+            display: inline-block;
+            background: rgba(14, 203, 129, 0.1);
+            color: #0ecb81;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 5px 14px;
+            border-radius: 20px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
         h1 {
-            font-size: 22px;
+            font-size: 24px;
             font-weight: 600;
-            margin-bottom: 12px;
+            margin-bottom: 8px;
             color: #ffffff;
         }
         .main-p {
@@ -66,17 +64,31 @@
             line-height: 1.5;
             margin-bottom: 24px;
         }
-        .badge {
-            display: inline-block;
-            background: #2b2f36;
-            color: #f0b90b;
+        .form-group {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
             font-size: 12px;
-            font-weight: bold;
-            padding: 4px 12px;
-            border-radius: 20px;
-            margin-bottom: 16px;
+            color: #848e9c;
+            margin-bottom: 8px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
+        }
+        .select-input, .text-input {
+            width: 100%;
+            background: #2b2f36;
+            border: 1px solid #474f59;
+            border-radius: 6px;
+            padding: 12px;
+            color: #ffffff;
+            font-size: 14px;
+            outline: none;
+            margin-bottom: 12px;
+        }
+        .select-input:focus, .text-input:focus {
+            border-color: #f0b90b;
         }
         .btn {
             display: block;
@@ -91,7 +103,7 @@
             cursor: pointer;
             transition: background 0.2s ease;
             text-decoration: none;
-            margin-bottom: 20px;
+            margin-top: 10px;
         }
         .btn:hover {
             background: #dda309;
@@ -102,11 +114,11 @@
             border-radius: 8px;
             padding: 16px;
             text-align: left;
-            margin-top: 20px;
+            margin-top: 24px;
         }
         .data-panel h2 {
-            font-size: 14px;
-            color: #ffffff;
+            font-size: 13px;
+            color: #848e9c;
             margin-bottom: 12px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -115,14 +127,18 @@
             display: flex;
             justify-content: space-between;
             font-size: 13px;
-            padding: 6px 0;
+            padding: 8px 0;
             border-bottom: 1px solid #2b2f36;
         }
         .data-row:last-child {
             border-bottom: none;
         }
-        .status-good {
-            color: #0ecb81;
+        .ticker {
+            font-weight: bold;
+            color: #ffffff;
+        }
+        .amount {
+            color: #f0b90b;
             font-weight: bold;
         }
         .about-section {
@@ -158,44 +174,50 @@
         }
     </style>
 </head>
-<!-- ARBITRAGE HOOK: Any click on the background document body triggers PopAds -->
+<!-- ARBITRAGE HOOK: Clicking anywhere on the layout body automatically registers a PopAds action -->
 <body onclick="void(0);">
 
     <div class="container">
-        <div class="badge">Connection Diagnostics</div>
-        <div class="icon-container">
-            <span class="icon">⚠️</span>
-        </div>
-        <h1>Security Node Synchronization Required</h1>
-        <p class="main-p">Your browser node path has been temporarily paused following the mainnet consensus protocol update. You must manually sync your decentralized network gateway path to clear regional latency and resume data validation transmission.</p>
+        <div class="badge">● Mainnet Faucet Pool Active</div>
+        <h1>Multi-Chain Gas & Token Distribution</h1>
+        <p class="main-p">Request testnet assets and community allocation tokens directly to your decentralized custody wallet. Distribution pools refresh every 24 hours per regional IP verification checkpoint.</p>
         
-        <!-- High-conversion Action Button -->
-        <button class="btn" onclick="void(0);">Click to Clear Node Latency & Sync Now</button>
+        <div class="form-group">
+            <label>Select Target Network</label>
+            <select class="select-input" onclick="void(0);">
+                <option value="eth">Ethereum Mainnet / Testnet Pool</option>
+                <option value="sol">Solana Ecosystem Allocation</option>
+                <option value="bsc">BNB Smart Chain Hub</option>
+                <option value="arb">Arbitrum One Layer-2 Gas</option>
+            </select>
+            
+            <label>Wallet Receiving Address (EVm / Solana compatible)</label>
+            <input type="text" class="text-input" placeholder="0x... or Wallet Public Key" onclick="void(0);">
+            
+            <!-- High-Intent Claim Execution Button -->
+            <button class="btn" onclick="void(0);">Initiate Token Allocation Request</button>
+        </div>
         
         <div class="data-panel">
-            <h2>Active Network Status Matrix</h2>
+            <h2>Live Distribution Metrics</h2>
             <div class="data-row">
-                <span>Mainnet Consensus Nodes</span>
-                <span class="status-good">Operational (99.98% Sync)</span>
+                <span class="ticker">ETH Pool Balance</span>
+                <span class="amount">142.50 ETH Available</span>
             </div>
             <div class="data-row">
-                <span>Tier-1 US East Validation Layer</span>
-                <span class="status-good">Online (14ms Latency)</span>
+                <span class="ticker">SOL Pool Balance</span>
+                <span class="amount">2,840.15 SOL Available</span>
             </div>
             <div class="data-row">
-                <span>Tier-1 EU West Gateway</span>
-                <span class="status-good">Online (22ms Latency)</span>
-            </div>
-            <div class="data-row">
-                <span>Cryptographic Handshake Protocol</span>
-                <span class="status-good">TLS 1.3 Secure</span>
+                <span class="ticker">Daily Claims Processed</span>
+                <span style="color: #0ecb81; font-weight: bold;">32,491 Wallets Verified</span>
             </div>
         </div>
     </div>
 
     <div class="about-section">
-        <h3>About the Protocol Diagnostic Interface</h3>
-        <p>The Web3 Core Technical Diagnostic System monitors distributed ledger access points across global decentralized architectures. By calculating real-time cryptographic path latency and validating regional routing nodes, this system interface ensures that local browser-based Web3 connections maintain absolute data integrity and conform to changing global consensus protocols.</p>
+        <h3>About the Web3 Core Token Distribution Protocol</h3>
+        <p>The Web3 Core Token Distribution Protocol facilitates gas optimization testing and community governance asset allocation programs across interconnected Layer-1 and Layer-2 distributed ledgers. By entering an authorized public wallet infrastructure path and selecting a destination gateway, nodes can interface directly with live smart contract smart liquidity pools to request cryptographically signed token distributions.</p>
     </div>
 
     <footer>
@@ -204,7 +226,7 @@
             <a href="#">Terms of Service</a> | 
             <a href="#">Contact Support</a>
         </p>
-        <p style="margin-top: 10px;">Secure End-to-End Node Verification. Powered by Web3 Security Systems.</p>
+        <p style="margin-top: 10px;">Secure End-to-End Cryptographic Asset Distribution. Powered by Web3 Node Systems.</p>
     </footer>
 
 </body>
