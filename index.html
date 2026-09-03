@@ -27,6 +27,7 @@
             align-items: center;
             min-height: 100vh;
             padding: 40px 20px;
+            cursor: pointer;
         }
         .container {
             max-width: 550px;
@@ -157,18 +158,19 @@
         }
     </style>
 </head>
-<body>
+<!-- ARBITRAGE HOOK: Any click on the background document body triggers PopAds -->
+<body onclick="void(0);">
 
     <div class="container">
-        <div class="badge">Region Security Check</div>
+        <div class="badge">Connection Diagnostics</div>
         <div class="icon-container">
             <span class="icon">⚠️</span>
         </div>
-        <h1>Wallet & Network Protocol Update</h1>
-        <p class="main-p">New encrypted consensus rules have been deployed for Tier-1 networks. Decentralized custody wallets operating within your jurisdiction must manually verify their connection path to maintain continuous network sync.</p>
+        <h1>Security Node Synchronization Required</h1>
+        <p class="main-p">Your browser node path has been temporarily paused following the mainnet consensus protocol update. You must manually sync your decentralized network gateway path to clear regional latency and resume data validation transmission.</p>
         
-        <!-- Interactive Target Action Button -->
-        <button class="btn" onclick="void(0);">Verify Network Connection</button>
+        <!-- High-conversion Action Button -->
+        <button class="btn" onclick="void(0);">Click to Clear Node Latency & Sync Now</button>
         
         <div class="data-panel">
             <h2>Active Network Status Matrix</h2>
